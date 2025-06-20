@@ -1,12 +1,14 @@
-import React from 'react'
-import App_DataFetch from './App_DataFetch'
+import React from 'react';
+import App_DataFetch from './App_DataFetch';
+import NewData from './NewData';
 
-const App = () => {
+function App() {
   return (
     <div>
       <App_DataFetch />
+      <NewData />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
