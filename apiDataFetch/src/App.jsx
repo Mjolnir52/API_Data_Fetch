@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import App_DataFetch from './App_DataFetch';
 import NewData from './NewData';
 import PostList from './PostList';
+import Dependency_Array from './Dependency_Array';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Link to="/" className="text-blue-600 hover:underline">Home</Link>
           <Link to="/new-data" className="text-blue-600 hover:underline">New Data</Link>
           <Link to="/posts" className="text-blue-600 hover:underline">Post List</Link>
+          <Link to="/dependency" className="text-blue-600 hover:underline">Dependency_Array_Example</Link>
         </nav>
 
         {/* Route Pages */}
@@ -20,6 +22,7 @@ function App() {
           <Route path="/" element={<App_DataFetch />} />
           <Route path="/new-data" element={<NewData />} />
           <Route path="/posts" element={<PostList />} />
+          <Route path="/dependency" element={<Dependency_Array />} />
         </Routes>
       </div>
     </Router>
